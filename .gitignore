@@ -2,6 +2,7 @@
 .vscode/
 .idea/
 **/*~
+.history/
 
 # Mac OSX temporary files
 .DS_Store
