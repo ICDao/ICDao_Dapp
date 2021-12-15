@@ -5,6 +5,11 @@
       "package": "ICDdao_Dapp",
       "type": "rust"
     },
+    "token": {
+      "candid": "backend/rust/DIP20/token.did",
+      "package": "token",
+      "type": "rust"
+    },
     "ICDdao_Dapp_assets": {
       "dependencies": [
         "ICDdao_Dapp"
