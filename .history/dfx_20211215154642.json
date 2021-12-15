@@ -1,7 +1,7 @@
 {
   "canisters": {
     "ICDdao_Dapp": {
-      "candid": "backend/rust/ICDdao_Dapp/ICDdao_Dapp.did",
+      "candid": "src/ICDdao_Dapp/ICDdao_Dapp.did",
       "package": "ICDdao_Dapp",
       "type": "rust"
     },

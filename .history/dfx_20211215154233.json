@@ -1,7 +1,7 @@
 {
   "canisters": {
     "ICDdao_Dapp": {
-      "candid": "backend/rust/ICDdao_Dapp/ICDdao_Dapp.did",
+      "candid": "src/ICDdao_Dapp/ICDdao_Dapp.did",
       "package": "ICDdao_Dapp",
       "type": "rust"
     },
@@ -10,10 +10,10 @@
         "ICDdao_Dapp"
       ],
       "frontend": {
-        "entrypoint": "frontend/ICDdao_Dapp_assets/src/index.html"
+        "entrypoint": "src/ICDdao_Dapp_assets/src/index.html"
       },
       "source": [
-        "frontend/ICDdao_Dapp_assets/assets",
+        "src/ICDdao_Dapp_assets/assets",
         "dist/ICDdao_Dapp_assets/"
       ],
       "type": "assets"

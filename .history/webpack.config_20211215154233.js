@@ -40,7 +40,7 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 
 const frontendDirectory = "ICDdao_Dapp_assets";
 
-const asset_entry = path.join("frontend", frontendDirectory, "src", "index.html");
+const asset_entry = path.join("src", frontendDirectory, "src", "index.html");
 
 module.exports = {
   target: "web",
@@ -89,7 +89,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.join(__dirname, "frontend", frontendDirectory, "assets"),
+          from: path.join(__dirname, "src", frontendDirectory, "assets"),
           to: path.join(__dirname, "dist", frontendDirectory),
         },
       ],

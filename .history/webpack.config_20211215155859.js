@@ -89,7 +89,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.join(__dirname, "frontend", frontendDirectory, "assets"),
+          from: path.join(__dirname, "src", frontendDirectory, "assets"),
           to: path.join(__dirname, "dist", frontendDirectory),
         },
       ],
