@@ -19,8 +19,8 @@ function initCanisterEnv () {
   }
 
   const network =
-    process.env.DFX_NETWORK ||
-    (process.env.NODE_ENV === 'production' ? 'ic' : 'local')
+    process.env.DFX_NETWORK || 'local'
+  // (process.env.NODE_ENV === 'production' ? 'ic' : 'local')
 
   const canisterConfig = network === 'local' ? localCanisters : prodCanisters
 
@@ -41,7 +41,7 @@ console.log(process.env)
 
 module.exports = {
   publicPath: '/',
-  outputDir: 'dist',
+  outputDir: 'dist/ICDdao_Dapp_assets',
   lintOnSave: process.env.NODE_ENV !== 'production',
   pages: {
     index: {

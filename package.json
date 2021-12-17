@@ -9,10 +9,10 @@
     "Canister"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "webpack",
+    "serve": "vue-cli-service serve --env development",
+    "build": "vue-cli-service build --env development",
     "prebuild": "npm run copy:types",
-    "start": "webpack serve --mode development --env development",
+    "start": "vue-cli-service serve --mode development --env development",
     "prestart": "npm run copy:types",
     "copy:types": "rsync -avr .dfx/$(echo ${DFX_NETWORK:-'**'})/canisters/** --exclude='assets/' --exclude='idl/' --exclude='*.wasm' --delete src/declarations"
   },
