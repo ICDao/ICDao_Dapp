@@ -108,7 +108,7 @@
   <div class="learn">
     <div class="title">Learn about</div>
     <div class="learn-list">
-      <div class="learn-item">
+      <div class="learn-item" v-for="item in 3" :key="item">
         <div class="top-img">
           <img :src="require('@/assets/advertisement/7@2x.png')">
         </div>
