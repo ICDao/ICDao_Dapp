@@ -1,7 +1,5 @@
 <template>
-  <div class="footerBackground">
-
-  </div>
+  <div class="footerBackground"></div>
   <div class="footer">
     <div class="footer">
       <div class="list">
@@ -38,6 +36,7 @@ export default defineComponent({
   width: 300vh;
   margin-left: -30%;
   bottom: 0;
+  overflow: auto;
 }
 
 .footer {

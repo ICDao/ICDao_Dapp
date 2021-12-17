@@ -1,14 +1,21 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     width: 1600px;
     margin: 0 auto;
     background-color: black;
 }
-#app{
+
+#app {
     position: relative;
 }
-button{
+
+button {
     border: unset;
 }
+
 @keyframes white-button-hover {
     from {
         background-color: white;

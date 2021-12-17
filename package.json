@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve --env development",
-    "build": "webpack",
+    "build": "vue-cli-service build --env development",
     "prebuild": "npm run copy:types",
     "start": "webpack serve --mode development --env development",
     "prestart": "npm run copy:types",
