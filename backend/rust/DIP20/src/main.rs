@@ -1,10 +1,3 @@
-/**
-* Module     : main.rs
-* Copyright  : 2021 DFinance Team
-* License    : Apache 2.0 with LLVM Exception
-* Maintainer : DFinance Team <hello@dfinance.ai>
-* Stability  : Experimental
-*/
 use candid::{candid_method, CandidType, Deserialize, Int, Nat};
 use cap_sdk::{handshake, insert, Event, IndefiniteEvent, TypedEvent};
 use cap_std::dip20::cap::DIP20Details;

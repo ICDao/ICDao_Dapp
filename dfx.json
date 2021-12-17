@@ -10,6 +10,11 @@
       "package": "token",
       "type": "rust"
     },
+    "token721": {
+      "candid": "backend/rust/DIP721/token721.did",
+      "package": "token721",
+      "type": "rust"
+    },
     "ICDdao_Dapp_assets": {
       "dependencies": [
         "ICDdao_Dapp"
