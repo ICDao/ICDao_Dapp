@@ -1,0 +1,61 @@
+body {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: black;
+}
+#app{
+    position: relative;
+}
+button{
+    border: unset;
+}
+@keyframes white-button-hover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #d4d4d4;
+    }
+}
+
+@-webkit-keyframes white-button-hover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #d4d4d4;
+    }
+}
+
+@keyframes to-white-button-hover {
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+@-webkit-keyframes to-white-button-hover {
+    to {
+        background-color: white;
+        color: black;
+    }
+}
+
+.white-button {
+    background-color: white;
+}
+
+.white-button:hover {
+    animation: white-button-hover 1s forwards;
+    -webkit-animation: white-button-hover 1s forwards;
+}
+
+/*.to-white-button {*/
+/*    animation: to-white-button-hover 1s forwards;*/
+/*    -webkit-animation: to-white-button-hover 1s forwards;*/
+/*}*/
+
+.to-white-button:hover {
+    animation: to-white-button-hover 1s forwards;
+    -webkit-animation: to-white-button-hover 1s forwards;
+}
