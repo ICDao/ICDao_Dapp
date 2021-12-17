@@ -13,24 +13,21 @@ body {
 }
 
 button {
+    cursor: pointer;
     border: unset;
 }
 
 @keyframes white-button-hover {
-    from {
-        background-color: white;
-    }
     to {
-        background-color: #d4d4d4;
+        background-color: black;
+        color: white;
     }
 }
 
 @-webkit-keyframes white-button-hover {
-    from {
-        background-color: white;
-    }
     to {
-        background-color: #d4d4d4;
+        background-color: black;
+        color: white;
     }
 }
 
@@ -48,19 +45,10 @@ button {
     }
 }
 
-.white-button {
-    background-color: white;
-}
-
-.white-button:hover {
+.to-black-button:hover {
     animation: white-button-hover 1s forwards;
     -webkit-animation: white-button-hover 1s forwards;
 }
-
-/*.to-white-button {*/
-/*    animation: to-white-button-hover 1s forwards;*/
-/*    -webkit-animation: to-white-button-hover 1s forwards;*/
-/*}*/
 
 .to-white-button:hover {
     animation: to-white-button-hover 1s forwards;

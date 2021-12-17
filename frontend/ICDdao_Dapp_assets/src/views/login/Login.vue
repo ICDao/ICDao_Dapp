@@ -13,7 +13,7 @@
       <input placeholder="Enter Identity Anchor">
     </div>
     <div class="authenticate">
-      <button>Authenticate</button>
+      <button class="to-black-button">Authenticate</button>
     </div>
     <div class="agreement">
       <div>
@@ -30,7 +30,6 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -112,6 +111,7 @@ export default defineComponent({
     margin-right: 50px;
 
     button {
+      cursor: pointer;
       width: 100%;
       height: 100%;
       text-align: center;
@@ -121,6 +121,7 @@ export default defineComponent({
       font-family: Microsoft YaHei, Microsoft YaHei-Bold;
       font-weight: 700;
       color: #000000;
+      border: 2px solid white;
     }
   }
 
