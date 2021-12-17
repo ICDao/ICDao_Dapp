@@ -617,12 +617,12 @@ fn get_cycles() -> u64 {
 
 #[query]
 fn name() -> String {
-    return "IC_DRIP".to_string();
+    return "ICD_NFT".to_string();
 }
 
 #[query]
 fn symbol() -> String {
-    return "IC_DRIP".to_string();
+    return "ICDN".to_string();
 }
 
 #[query]
