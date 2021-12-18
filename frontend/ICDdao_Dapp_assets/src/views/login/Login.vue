@@ -33,10 +33,23 @@
 </template>
 
 <script>
-import {defineComponent} from "vue";
+import {defineComponent, onMounted} from "vue";
+import {AuthClient} from "@dfinity/auth-client";
 
 export default defineComponent({
-  name: "Login"
+  name: "Login",
+  setup(){
+    onMounted(()=>{
+
+    })
+    const login = async () => {
+      const authClient = await AuthClient.create()
+      console.log('login', authClient)
+    }
+    onMounted(() => {
+      login();
+    })
+  }
 });
 </script>
 

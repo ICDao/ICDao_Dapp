@@ -1,6 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
-const TerserPlugin = require("terser-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin')
 
 function initCanisterEnv () {
   let localCanisters,
@@ -39,12 +39,14 @@ process.env = {
   ...process.env,
   ...initCanisterEnv()
 }
+process.env2 = initCanisterEnv()
 console.log(process.env)
 
 module.exports = {
   publicPath: '/',
   outputDir: 'dist/ICDdao_Dapp_assets',
   lintOnSave: process.env.NODE_ENV !== 'production',
+  transpileDependencies: ['@dfinity'],
   pages: {
     index: {
       entry: 'frontend/ICDdao_Dapp_assets/src/main.js',
@@ -82,11 +84,14 @@ module.exports = {
       .set('$', path.resolve('src'))
   },
   configureWebpack: {
-    optimization: {
-      minimize: process.env.NODE_ENV === 'production',
-      minimizer: [new TerserPlugin()],
+    resolve: {
+      extensions: ['.ts', '.tsx', '.js', '.json']
     },
-    plugins: []
+    module: {
+      rules: [
+        { test: /\.ts$/, loader: 'ts-loader' },
+      ]
+    }
   }
 
 }

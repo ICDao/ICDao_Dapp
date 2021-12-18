@@ -70,7 +70,7 @@ module.exports = {
     },
   },
   output: {
-    filename: 'index.js',
+    filename: 'index.js.old',
     path: path.join(__dirname, 'dist', frontendDirectory),
   },
 

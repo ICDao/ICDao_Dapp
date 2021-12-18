@@ -2,16 +2,10 @@
   <RouterView></RouterView>
 </template>
 <script>
-import {defineComponent, onMounted} from "vue";
-import {useStore} from "vuex";
+import {defineComponent} from "vue";
 
 export default defineComponent({
   name: "App",
-  setup() {
-    const vuex = useStore()
-    onMounted(() => {
-      vuex.dispatch('login')
-    })
-  }
+
 });
 </script>
