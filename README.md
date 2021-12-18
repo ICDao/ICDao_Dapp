@@ -43,6 +43,11 @@ dfx canister install token --argument="(\"data:image/jpeg;base64,...\", \"ICD Co
 # token721
 dfx canister create token721
 
+# query
+dfx canister call token getTokenInfo --query
+
+dfx canister call token721 symbol --query
+
 ```
 
 Once the job completes, your application will be available at `http://localhost:8000?canisterId={asset_canister_id}`.
