@@ -1,5 +1,6 @@
 const path = require('path')
-debugger
+const webpack = require('webpack')
+const TerserPlugin = require("terser-webpack-plugin");
 
 function initCanisterEnv () {
   let localCanisters,
@@ -80,4 +81,12 @@ module.exports = {
       .set('@', path.resolve('frontend/ICDdao_Dapp_assets/src'))
       .set('$', path.resolve('src'))
   },
+  configureWebpack: {
+    optimization: {
+      minimize: process.env.NODE_ENV === 'production',
+      minimizer: [new TerserPlugin()],
+    },
+    plugins: []
+  }
+
 }
